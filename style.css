@@ -1,112 +1,134 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-// Copper Wind Solutions<br/>
-color: black;
- font-size: 16px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// No 438, M G Complex, Udayanagar Main Road, Bangalore, 560016<br/><br/>copper.wind.solution@gmail.com<br/>www.copperwind.in
-color: black;
- font-size: 14px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// CHIMNEY
-color: black;
- font-size: 32px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-//  <br/>
-color: black;
- font-size: 32px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// INSTALLATION &<br/>SERVICES
-color: black;
- font-size: 28px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// GAS STOVE / HOB / COOKTOP
-color: black;
- font-size: 32px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-//  <br/>
-color: black;
- font-size: 32px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// SERVICES
-color: black;
- font-size: 28px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// CORE CUTTING<br/>
-color: black;
- font-size: 32px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// CHIMNEY HOLES<br/>A/C HOLES<br/>ANY SIZE HOLES
-color: black;
- font-size: 28px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// 9632660276
-color: rgba(0, 0, 0, 0.57);
- font-size: 14px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// 9632660276
-color: rgba(0, 0, 0, 0.57);
- font-size: 14px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// 9632660276
-color: rgba(0, 0, 0, 0.57);
- font-size: 14px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// 9632660276
-color: rgba(0, 0, 0, 0.57);
- font-size: 14px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// 9632660276
-color: rgba(0, 0, 0, 0.57);
- font-size: 14px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// 9632660276
-color: rgba(0, 0, 0, 0.57);
- font-size: 14px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1467px;
+  background: #fff;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+.site-header {
+  text-align: center;
+  margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.service-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #F6F6F6;
+  padding: 19px 23px;
+  align-items: center;
+}
+
+.service-image {
+  flex: 0 0 auto;
+  width: 508px;
+  height: auto;
+  max-width: 100%;
+}
+
+.service-info {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.service-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #000;
+}
+
+.service-subtitle {
+  font-size: 28px;
+  font-weight: 400;
+  color: #000;
+}
+
+.contact-info {
+  display: flex;
+  gap: 27px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px 8px 14px;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 100px;
+}
+
+.phone-number {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.57);
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.contact-details p {
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.company-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-block {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .service-image {
+    width: 100%;
+    max-width: 400px;
+  }
+}
