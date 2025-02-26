@@ -80,7 +80,8 @@ body {
 
 .contact-info {
   display: flex;
-  gap: 27px;
+  gap: 16px;
+  margin-top:16px;
   align-items: center;
   flex-wrap: wrap;
 }
